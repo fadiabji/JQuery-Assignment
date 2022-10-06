@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise 2</title>
+    <script src="../Scripts/jquery-3.6.0.js"></script>
+    <script src="../Scripts/JQ.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script>
+        $(document).ready(function () {
+            $("#hideText").click(function () {
+                $("#testText").hide();
+            });
+            $("#showText").click(function () {
+                $("#testText").show();
+            });
+        })
+    </script>
+</head>
+<body>
+    <h2>Exercise 2 - Show/Hide</h2>
+    <!--Create a jQuery script that hides an element
+        (e.g. text element or an image) when it is clicked
+        and reveals it again when another element is clicked.
+
+        HTML - An element, A button
+        JQuery - A mouse event (when button is clicked),
+                 a method hides or show element
+
+                Selector, Event,DOM Manipulation
+        Links
+            https://www.tutorialsteacher.com/jquery/jquery-effect-methods-reference
+    -->
+
+    <div>
+        <p id="testText">This text will be disapeared when clicking the hide me button, and show again when clicking show me button.</p>
+    </div>
+    <div>
+        <input type="button" id="hideText" value="Hide-Text" class="btn btn-dark" />
+        <input type="button" id="showText" value="Show-Text" class="btn btn-light" />
+    </div>
+
+        <a href="../Index.html">Back to index page </a>
+    </body>
+    </html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="../Scripts/jquery-3.6.0.js"></script>
+    <script src="../Scripts/JQ.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input").keypress(function (event) {
+                alert("you have pressed: " + String.fromCharCode(event.which));
+                var inputString = String.fromCharCode(event.which);
+                $("#output").append(inputString + "<br>");
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>Exercise 4 - Key Press Listener</h2>
+
+    <!--​Create a jQuery script that listens for a key press on the keyboard,
+        and prints to an element on the page, which key(s) is being held down,
+        or was pressed.
+
+        HTML - An element that shows which key was pressed, an element that shows which key is pressed
+        JQuery - A keyboard event (when key is pressed),
+                 surpressed functionality
+
+                Selector, Event,DOM Manipulation
+        Links
+            https://www.tutorialsteacher.com/jquery/jquery-dom-methods-reference
+            https://www.w3schools.com/jquery/event_preventdefault.asp
+    -->
+    
+    <input value="Enter a letter" />
+    <p id="output" > </p>
+
+    <a href="../Index.html">Back to index page </a>
+</body>
+</html>
