@@ -7,7 +7,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="../Scripts/jquery-3.6.0.js"></script>
     <script src="../Scripts/JQ.js"></script>
-    
+    <script>
+
+        $(document).ready(function () {
+            $("#firstDiv").hover(function () {
+                var div = $("#firstDiv");
+                div.animate({ opacity: '0.4' }, "slow");
+                div.animate({ opacity: '1' }, "slow");
+
+                //div.animate({ width: '300px', opacity: '0.8' }, "slow");
+                //div.animate({ height: '100px', opacity: '0.4' }, "slow");
+                //div.animate({ width: '100px', opacity: '0.8' }, "slow");
+            });
+        });
+
+    </script>
 </head>
 <body>
     <h2>Exercise 7 - Animation Fading 2</h2>
@@ -23,7 +37,7 @@
             https://www.tutorialsteacher.com/jquery/jquery-animation
             https://www.tutorialsteacher.com/jquery/jquery-event-reference
     -->
-
+    <div style="height:100px; width:100px; background-color:blue;" id="firstDiv"></div>
     <a href="../Index.html">Back to index page </a>
 </body>
 </html>
